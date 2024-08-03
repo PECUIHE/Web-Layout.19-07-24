@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web-Layout</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        place-content: center;
+        box-sizing: border-box;
+      }
+
+      header,footer {
+        background-color: aqua;
+        height: 80px;
+        display: grid;
+        place-items: center;
+        border-radius: 5px;
+      } 
+      body {
+        background-color: blueviolet;
+        padding: 30px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        border-radius: 5px;
+      }
+      
+      main{
+        display: flex;
+        gap: 30px;
+        height: 100%;
+      }
+
+      aside {
+        background-color: greenyellow;
+        flex-basis: 25%;
+        border-radius: 5px;
+      }
+
+      article{
+        background-color: orange;
+        flex-basis: 75%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: flex-end;
+        padding: 20px;
+        border-radius: 5px;
+      }
+      section{
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+      }
+
+      .image{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        background-color: yellow;
+        height: 80px;
+        display: grid;
+        place-items: center;
+        border-radius: 5px;
+      }
+
+
+
+    </style>
+  </head>
+  <body>
+    <header>Header</header>
+
+    <main>
+      <aside>Aside</aside>
+
+      <article>
+        <p>Article</p>
+        <section>
+            <div class="image">Image1</div>
+            <div class="image">Image2</div>
+            <div class="image ">Image3</div>
+        </section>
+      </article>
+
+    </main>
+
+    <footer>Footer</footer>
+  </body>
+</html>
